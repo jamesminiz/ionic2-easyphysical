@@ -1,0 +1,154 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Quiz</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="card">
+  <ion-card>
+  <ion-card-header>
+    Question 1: 
+  </ion-card-header>
+  <ion-card-content>
+    <p>What is the displacement ?</p>
+    <br>
+    <p>A. Scalar quantity</p>
+  <p>B. Vector quantity</p>
+  <p>C. Base quantity</p>
+  <p>D. Derived quantity</p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+ <div class="card">
+  <ion-card>
+  <ion-card-content>
+   <ion-list>
+        <ion-item>
+            <ion-label>Answer :</ion-label>
+            <ion-input text-center type="text" [(ngModel)]="application.Answer1"></ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</div>
+<div class="card">
+  <ion-card>
+  <ion-card-header>
+    Question 2:  
+  </ion-card-header>
+  <ion-card-content>
+    <p>A boy of mass 50 kg runs with a force of 100 N, his acceleration would be ?</p>
+    <br>
+    <p>A. 5000</p>
+  <p>B.  50</p>
+  <p>C. 150</p>
+  <p>D. 2</p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+ <div class="card">
+  <ion-card>
+  <ion-card-content>
+   <ion-list>
+        <ion-item>
+            <ion-label>Answer :</ion-label>
+            <ion-input text-center type="text" [(ngModel)]="application.Answer2"></ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</div>
+<div class="card">
+  <ion-card>
+  <ion-card-header>
+    Question 3: 
+  </ion-card-header>
+  <ion-card-content>
+    <p>Adding of two vectors to get a single vector is termed as ?</p>
+    <br>
+    <p>A. Final vector</p>
+  <p>B. Resultant vector</p>
+  <p>C. Dominant vector</p>
+  <p>D. Recessive vector</p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+ <div class="card">
+  <ion-card>
+  <ion-card-content>
+   <ion-list>
+        <ion-item>
+            <ion-label>Answer :</ion-label>
+            <ion-input text-center type="text" [(ngModel)]="application.Answer3" ></ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</div>
+<div class="card">
+  <ion-card>
+  <ion-card-header>
+    Question 4:  
+  </ion-card-header>
+  <ion-card-content>
+    <p>In scalar, there is only addition and subtraction of ?</p>
+    <br>
+    <p>A. Number</p>
+  <p>B. Number according to direction</p>
+  <p>C. Number according to unit</p>
+  <p>D. B and C both</p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+ <div class="card">
+  <ion-card>
+  <ion-card-content>
+   <ion-list>
+        <ion-item>
+            <ion-label>Answer :</ion-label>
+            <ion-input text-center type="text" [(ngModel)]="application.Answer4"></ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</div>
+<div class="card">
+  <ion-card>
+  <ion-card-header>
+    Question 5: 
+  </ion-card-header>
+  <ion-card-content>
+    <p>The approximate weight (on Earth) of a mass of 3 kg is ?</p>
+    <br>
+    <p>A. 3000 N</p>
+  <p>B.  0.3 N</p>
+  <p>C. 300 N</p>
+  <p>D. 30 N</p>
+  </ion-card-content>
+</ion-card>
+</div>
+
+ <div class="card">
+  <ion-card>
+  <ion-card-content>
+   <ion-list>
+        <ion-item>
+            <ion-label>Answer :</ion-label>
+            <ion-input text-center type="text"[(ngModel)]="application.Answer5" ></ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+</div>
+<button ion-button block (click)="checkscore()">Send</button>
+
+</ion-content>

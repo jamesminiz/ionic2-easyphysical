@@ -1,0 +1,36 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Score</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div align = center><div margin-top>
+  <ion-img style="width: 200px; height: 70px;" src="assets/img/score.png"></ion-img></div></div>
+  <div align = center><div margin-top>
+<div class="card">
+  <ion-card>
+  <ion-card-content>
+    <h1>Score : {{Scores}}</h1> 
+  </ion-card-content>
+</ion-card>
+</div> 
+<h5>History</h5>
+</div></div>
+<ion-list inset>
+        <ion-item *ngFor="let application of applications" (click)="showDetail(application)">
+          <div item-left>{{application.Firstname}}</div>
+          <div item-left>{{application.Lastname}}</div>
+    
+        </ion-item>
+      </ion-list>
+    <div margin-top><div align = center><ion-buttons>
+      
+<button ion-button (click)="save()" round>Home</button>
+
+</ion-buttons></div></div>
+</ion-content>

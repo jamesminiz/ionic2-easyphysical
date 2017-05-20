@@ -1,0 +1,31 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>{{ action }} Information</ion-title>
+    <ion-buttons end >
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+    <ion-list>
+        <ion-item>
+            <ion-label>Firstname</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="application.Firstname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Lastname</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="application.Lastname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Birthday</ion-label>
+            <ion-datetime displayFormat="MMMM D, YYYY" pickerFormat="MMMM D YYYY" [(ngModel)]="isoDate"></ion-datetime>
+        </ion-item>
+    </ion-list>
+    <button ion-button block (click)="save()">Save</button>
+
+     
+
+</ion-content> 
